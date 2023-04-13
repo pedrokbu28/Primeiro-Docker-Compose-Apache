@@ -1,0 +1,9 @@
+version: '2.4'
+services:
+  apache:
+    image: httpd:latest
+    container_name: my-novo-apache-app
+    ports:
+    - '80:80'
+    volumes:
+    - ./Primeiro-Docker:/usr/local/apache2/htdocs
